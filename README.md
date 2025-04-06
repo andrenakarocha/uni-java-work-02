@@ -1,38 +1,48 @@
-# Projeto Locadora de Veículos - Classe Veiculo
+<h1 align="center"> 🚗💨 Projeto Locadora de Veículos - Classe Veiculo 💨🚗</h1>
 
-# Aluno:
+**Aluno:** André Nakamatsu Rocha - RM 555004
 
-## André Nakamatsu Rocha - RM 555004
+Este projeto desenvolve uma classe `Veiculo` em Java ☕ para gerenciar os veículos de uma locadora, oferecendo funcionalidades essenciais e extras para uma experiência completa!
 
-Este projeto implementa uma classe `Veiculo` em Java para representar veículos de uma locadora.
+## ✨ Funcionalidades Implementadas ✨
 
-## Funcionalidades Implementadas:
+- **➕ Criação de Veículos:** Inicialize objetos `Veiculo` com seu modelo (🛻, 🏍️, 🚌) e o valor da diária (💰).
+- **🗓️ Cálculo de Aluguel:** Estime o custo total do aluguel baseado no número de dias (🔢).
+- **📉 Desconto Padrão:** Receba um desconto de 10% ao alugar por 7 dias ou mais! 🎉
+- **⏰ Multa por Atraso:** Calcule a multa por devolver o veículo após o prazo (2% do valor da diária por dia de atraso ⚠️).
+- **🪜 Descontos Progressivos:** Alugue por mais tempo e pague menos!
+  - 10 dias ou mais: 10% de desconto 🤩
+  - 15 dias ou mais: 15% de desconto 🥳
+- **✅ Testes Unitários:** Validação robusta do comportamento da classe com JUnit, cobrindo cenários normais e também situações extremas (🚫 0 dias, valores negativos).
 
-- Criação de objetos `Veiculo` com modelo e valor da diária.
-- Cálculo do custo total do aluguel com base na quantidade de dias.
-- Aplicação de desconto de 10% para aluguéis de 7 dias ou mais.
-- Cálculo de multa por devolução atrasada (2% do valor da diária por dia de atraso).
-- Implementação de descontos progressivos para aluguéis mais longos (10% para 10-14 dias, 15% para 15+ dias).
-- Testes unitários abrangentes utilizando JUnit para validar o comportamento da classe, incluindo cenários normais e extremos.
+## 🧪 Como Executar os Testes 🧪
 
-## Como Executar os Testes:
+Para garantir a qualidade do código, os testes unitários podem ser facilmente executados através da sua IDE preferida (com suporte a JUnit), ou utilizando as ferramentas de build:
 
-Os testes unitários podem ser executados na IDE (com suporte a JUnit), utilizando Maven (`mvn test`) ou Gradle (`gradle test`), dependendo da configuração do projeto.
+- **Maven:** Execute `mvn test` no seu terminal. <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=ApacheMaven&logoColor=white" alt="Maven"/>
+- **Gradle:** Execute `gradle test` no seu terminal. <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white" alt="Gradle"/>
 
-## Estrutura do Projeto:
+## 📂 Estrutura do Projeto 📂
 
 ```
 ├── src/
 │   ├── main/
-│   │     └── Main.java
-    │     └── Veiculo.java
-    └── teste/
-│          └── VeiculoTest.java
-└── README.md
+│   │   ├── Main.java         # Classe principal com interação do usuário
+│   │   └── Veiculo.java      # Classe que representa o veículo
+│   └── test/
+│       └── VeiculoTest.java  # Classe com os testes unitários
+└── README.md                     # Este arquivo! 📖
 ```
 
-## Observações:
+## 💡 Observações Adicionais 💡
 
-- O construtor da classe `Veiculo` realiza a validação do valor da diária.
-- Os métodos de cálculo de custo e multa também validam os parâmetros de entrada.
-- Foram implementados descontos adicionais para demonstrar criatividade e cobrir mais cenários de negócio.
+- O construtor da classe `Veiculo` verifica se o valor da diária é válido (positivo!). 👍
+- Os métodos de cálculo (custo e multa) também validam as entradas para evitar erros inesperados. 🛡️
+- A implementação dos descontos progressivos demonstra uma abordagem criativa para incentivar aluguéis de longa duração. 🚀
+
+```
+git clone https://github.com/dolthub/dolt
+cd Projeto-Locadora-Veiculos
+```
+
+Divirta-se explorando o código e não hesite em contribuir! 😉
